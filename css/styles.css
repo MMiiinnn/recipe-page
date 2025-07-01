@@ -1,0 +1,152 @@
+.m-tb {
+  margin: 15px 0;
+}
+
+/* ------------ */
+.preparation-title,
+.ingredient-title,
+.instruction-title,
+.nutrition-title,
+.card-title {
+  font-family: YoungSerif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 15px 0;
+}
+
+.preparation-title,
+.ingredient-title,
+.instruction-title,
+.nutrition-title {
+  color: #7e4323;
+}
+/* ------ */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f3e5d8;
+  padding: 100px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-content {
+}
+
+.card-description {
+  font-size: 0.85rem;
+}
+
+/* Preparation */
+.preparation {
+  padding: 20px;
+  background-color: #fff7fc;
+  border-radius: 10px;
+}
+
+.preparation-title {
+  color: #972b6e;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.preparation-list,
+.ingredient-list,
+.instruction-list {
+  margin-left: 30px;
+  list-style: none;
+}
+
+.preparation-item,
+.ingredient-item,
+.instruction-item {
+  position: relative;
+  margin: 5px 0;
+}
+
+.preparation-item::before,
+.ingredient-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  border: 2px solid #7e4323;
+  border-radius: 50%;
+}
+
+/* Ingredients */
+.ingredients {
+}
+
+.ingredient-title {
+}
+
+/* Instruction */
+.instructions {
+  counter-reset: step; /* This line use for set the number on the left */
+}
+
+.instruction-title {
+}
+
+.instruction-item {
+  counter-increment: step; /* This line use for set the number on the left */
+  text-align: justify;
+}
+
+.instruction-item::before {
+  content: counter(step) ". "; /* This line use for set the number on the left */
+  position: absolute;
+  top: 0;
+  left: -25px;
+  color: #7e4323;
+  font-weight: 600;
+}
+
+/* Nutrition */
+.nutrition {
+}
+
+.nutrition-title {
+}
+
+.nutrition-description {
+  font-size: 0.94rem;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse; /* This line use for setting <tr> border */
+}
+
+.nutrition-table tr {
+  height: 50px;
+}
+
+.nutrition-table tr:not(tr:last-child) {
+  border-bottom: 1px solid #e3e3e3;
+}
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.nutrition-table tr td:first-child {
+  padding-left: 20px;
+}
+
+.nutrition-table tr td:nth-child(2) {
+  color: #7e4323;
+  font-weight: 600;
+}
