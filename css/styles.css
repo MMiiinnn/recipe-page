@@ -18,7 +18,7 @@
 .ingredient-title,
 .instruction-title,
 .nutrition-title {
-  color: #7e4323;
+  color: #984d25;
 }
 /* ------ */
 body {
@@ -45,8 +45,13 @@ body {
 .card-content {
 }
 
+.card-title {
+  color: black;
+}
+
 .card-description {
   font-size: 0.85rem;
+  color: black;
 }
 
 /* Preparation */
@@ -54,6 +59,7 @@ body {
   padding: 20px;
   background-color: #fff7fc;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
 .preparation-title {
@@ -88,6 +94,8 @@ body {
 
 /* Ingredients */
 .ingredients {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 20px;
 }
 
 .ingredient-title {
@@ -96,6 +104,8 @@ body {
 /* Instruction */
 .instructions {
   counter-reset: step; /* This line use for set the number on the left */
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 20px;
 }
 
 .instruction-title {
