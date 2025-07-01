@@ -33,7 +33,7 @@ body {
 .card {
   background-color: white;
   padding: 30px;
-  width: 600px;
+  width: 650px;
   border-radius: 20px;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .nutrition-description {
-  font-size: 0.94rem;
+  /* font-size: 0.94rem; */
 }
 
 .nutrition-table {
